@@ -7,6 +7,6 @@ The codebase is heavily based on [Stable Diffusion](https://github.com/CompVis/s
 
 ## Ads 
 
-Checkout our latent-base outlier synthesis papers in ICLR'22 [VOS](https://github.com/deeplearning-wisc/stud) and ICLR'23 [NPOS](https://github.com/deeplearning-wisc/npos) if you are interested!
+Check out our latent-based outlier synthesis papers in ICLR'22 [VOS](https://github.com/deeplearning-wisc/stud) and ICLR'23 [NPOS](https://github.com/deeplearning-wisc/npos) if you are interested!
 
 ## Requirements
