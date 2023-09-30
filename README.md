@@ -48,7 +48,11 @@ where "--source_folder" is the address of the full ImageNet dataset and "--targe
 
 **Datasets for evaluating model generalization**
 
-Please download [IMAGENET-A](https://github.com/hendrycks/natural-adv-examples) and [IMAGENET-V2](https://github.com/modestyachts/ImageNetV2). 
+Please download [IMAGENET-A](https://github.com/hendrycks/natural-adv-examples) and [IMAGENET-V2](https://github.com/modestyachts/ImageNetV2) and process the dataset by running (you need change the address of the datasets on your own):
+```
+python scripts/process_imagenetv2_and_a.py
+```
+
 
 
 ## Training

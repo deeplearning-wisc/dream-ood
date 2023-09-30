@@ -15,7 +15,7 @@ def read_classnames(text_file):
             classnames[folder] = classname
     return classnames
 
-# classnames = read_classnames('/nobackup-slow/dataset/my_xfdu/imagenet/classnames.txt')
+classnames = read_classnames('./scripts/classnames.txt')
 f1 = ['n01498041', 'n01514859', 'n01582220', 'n01608432', 'n01616318',
           'n01687978', 'n01776313', 'n01806567', 'n01833805', 'n01882714',
           'n01910747', 'n01944390', 'n01985128', 'n02007558', 'n02071294',
@@ -39,54 +39,27 @@ f1 = ['n01498041', 'n01514859', 'n01582220', 'n01608432', 'n01616318',
 
 
 # for imagenet-v2
-# name_list = list(classnames.keys())
-# copy_name = 'a'
-# for name in f1:
-#     index = name_list.index(name)
-#     shutil.copytree(os.path.join(
-#         '/nobackup-slow/dataset/my_xfdu/imagenetv2/imagenetv2-matched-frequency-format-val/', str(index)),
-#         os.path.join(
-#             '/nobackup-slow/dataset/my_xfdu/imagenetv2/processed/', copy_name)
-#     )
-#     copy_name += 'a'
+name_list = list(classnames.keys())
+copy_name = 'a'
+for name in f1:
+    index = name_list.index(name)
+    shutil.copytree(os.path.join(
+        '/nobackup-slow/dataset/my_xfdu/imagenetv2/imagenetv2-matched-frequency-format-val/', str(index)),
+        os.path.join(
+            '/nobackup-slow/dataset/my_xfdu/imagenetv2/processed/', copy_name)
+    )
+    copy_name += 'a'
 
 # for imageneta
-# name_list = os.listdir('/nobackup-slow/dataset/my_xfdu/imageneta/imagenet-a/')
-# index = 0
-# for name in f1:
-#     # index = name_list.index(name)
-#     if name in name_list:
-#         shutil.copytree(os.path.join(
-#             '/nobackup-slow/dataset/my_xfdu/imageneta/imagenet-a', name),
-#             os.path.join(
-#                 '/nobackup-slow/dataset/my_xfdu/imageneta/processed/', str(index))
-#         )
-#     index += 1
-
-# # for imagenetr
-# name_list = os.listdir('/nobackup-slow/dataset/my_xfdu/imagenetr/imagenet-r/')
-# index = 0
-# for name in f1:
-#     # index = name_list.index(name)
-#     if name in name_list:
-#         shutil.copytree(os.path.join(
-#             '/nobackup-slow/dataset/my_xfdu/imagenetr/imagenet-r', name),
-#             os.path.join(
-#                 '/nobackup-slow/dataset/my_xfdu/imagenetr/processed/', str(index))
-#         )
-#     index += 1
-
-
-# for imagenetsketch
-name_list = os.listdir('/nobackup/dataset/my_xfdu/imagenetske/sketch/')
+name_list = os.listdir('/nobackup-slow/dataset/my_xfdu/imageneta/imagenet-a/')
 index = 0
 for name in f1:
     # index = name_list.index(name)
     if name in name_list:
         shutil.copytree(os.path.join(
-            '/nobackup/dataset/my_xfdu/imagenetske/sketch', name),
+            '/nobackup-slow/dataset/my_xfdu/imageneta/imagenet-a', name),
             os.path.join(
-                '/nobackup/dataset/my_xfdu/imagenetske/processed/', str(index))
+                '/nobackup-slow/dataset/my_xfdu/imageneta/processed/', str(index))
         )
     index += 1
-breakpoint()
+
