@@ -70,7 +70,7 @@ python scripts/pretrain_cifar100.py
 ```
 After training, it will generate ID feature embeddings for outlier/inlier embedding sampling.
 
-* Pretrained models for [ImageNet-100]() and [Cifar-100]().
+* Pretrained models for [ImageNet-100](https://drive.google.com/file/d/1gV48a62xYKOvFZz6Ltm8mQ2eVeakwxOs/view?usp=sharing) and [Cifar-100](https://drive.google.com/file/d/1OR1q-WiyDfYj9Yp0frAcxU-uno_ppiXC/view?usp=sharing).
 
 **2. Generate the inlier/outlier embeddings**
 
