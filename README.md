@@ -85,7 +85,7 @@ python scripts/get_embed_cifar100.py
 
 After this step, you will see the generated inlier/outlier embedding in the root directory.
 
-* Pretrained embeddings: [inliers for ImageNet-100](), [outlier for ImageNet-100]() and [outliers for Cifar-100]().
+* Pretrained embeddings: [inliers for ImageNet-100](), [outlier for ImageNet-100]() and [outliers for Cifar-100](https://drive.google.com/file/d/18s3yozpejwYm7tx89JONbSSV-c4z4vYT/view?usp=sharing).
 
 **3. Synthesizing outliers in the pixel space**
 
@@ -106,7 +106,7 @@ python scripts/dream_ood.py --plms \
 * "--outdir" denotes the address you want to save the generated outlier images.
 * "--n_iter"/"--n_samples" control the number of images you generate in each step and the number of steps for generation.
 * "--id_data" can be chozen between in100 and cifar100.
-* For generating 100K images, you can specify the n_iter and n_samples such as n_iter=2,500 and n_samples=4. Consider generating on multiplt GPUs for speed up.
+* For generating 100K images, you can specify the n_iter and n_samples such as n_iter=25,000 and n_samples=4. Consider generating on multiplt GPUs for speed up.
 * Generated images: [outlier image for IN100](), [inlier image for IN100]() and [outlier image for cifar100]().
 
 
@@ -129,6 +129,7 @@ Here the model is trained from scratch.
 * Pretrained models: [IN100](), [CIFAR-100]().
 
 **5. Training with the generated inliers in the pixel space**
+
 Please execute the following in the command shell for generalization on ImageNet-100:
 ```
 python scripts/train_gene_in100.py 
