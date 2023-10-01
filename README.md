@@ -6,7 +6,7 @@ This is the source code accompanying the paper [***Dream the Impossible: Outlier
 The codebase is heavily based on [Stable Diffusion](https://github.com/CompVis/stable-diffusion).
 
 ## TODO
-Upload all the checkpoints and embeddings/images.
+Upload all the generated images.
 
 ## Ads 
 
@@ -85,7 +85,7 @@ python scripts/get_embed_cifar100.py
 
 After this step, you will see the generated inlier/outlier embedding in the root directory.
 
-* Pretrained embeddings: [inliers for ImageNet-100](), [outlier for ImageNet-100]() and [outliers for Cifar-100](https://drive.google.com/file/d/18s3yozpejwYm7tx89JONbSSV-c4z4vYT/view?usp=sharing).
+* Pretrained embeddings: [inliers for ImageNet-100](https://drive.google.com/file/d/1SSMOGNL7tklP3e9-KfM7z8xYFVKIhm8j/view?usp=sharing), [outlier for ImageNet-100](https://drive.google.com/file/d/1Wru0wtR3ts54FchTLEw_z76tIpaTXqch/view?usp=sharing) and [outliers for Cifar-100](https://drive.google.com/file/d/18s3yozpejwYm7tx89JONbSSV-c4z4vYT/view?usp=sharing).
 
 **3. Synthesizing outliers in the pixel space**
 
@@ -118,7 +118,7 @@ python scripts/train_ood_det_in100.py --my_info xxx --load xxx
 ```
 * "--my_info" denotes the name of the folder that contains the generated datasets in the previous step.
 
-Note that in order to save time, we use a [pretrained model]() for initialization, which is trained using the cross-entropy loss.
+Note that in order to save time, we use a [pretrained model](https://drive.google.com/file/d/1x3QpmPuW3u6Gh61l1AdE_8l7-8ibUhsO/view?usp=sharing) for initialization, which is trained using the cross-entropy loss.
 
 Please execute the following in the command shell for OOD detection on Cifar-100:
 ```
@@ -126,7 +126,7 @@ python scripts/train_ood_det_cifar100.py --my_info xxx
 ```
 Here the model is trained from scratch.
 
-* Pretrained models: [IN100](), [CIFAR-100]().
+* Pretrained models: [IN100](https://drive.google.com/file/d/1nOWX3qr-_k-5B6Lyp3tfp5GVMWuMGwWc/view?usp=sharing), [CIFAR-100](https://drive.google.com/file/d/1JCPC2l3j-ZKZYltt1KpmL11mBh-imDT_/view?usp=sharing).
 
 **5. Training with the generated inliers in the pixel space**
 
@@ -134,7 +134,7 @@ Please execute the following in the command shell for generalization on ImageNet
 ```
 python scripts/train_gene_in100.py 
 ```
-* Pretrained models: [IN100]().
+* Pretrained models: [IN100](https://drive.google.com/file/d/1I7qu8hBFL3oNobHxn-0BpzpqMpUb9dCf/view?usp=sharing).
 
 ## Test-time OOD detection
 Please execute the following in the command shell with ImageNet-100 as in-distribution:
