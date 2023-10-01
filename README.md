@@ -10,7 +10,9 @@ Upload all the generated images.
 
 ## Ads 
 
-Check out our latent-based outlier synthesis papers in ICLR'22 [VOS](https://github.com/deeplearning-wisc/vos) and ICLR'23 [NPOS](https://github.com/deeplearning-wisc/npos) if you are interested!
+Check out our 
+* latent-based outlier synthesis papers in ICLR'22 [VOS](https://github.com/deeplearning-wisc/vos) and ICLR'23 [NPOS](https://github.com/deeplearning-wisc/npos)
+* unknown synthesis for object detection in video datasets CVPR'22 work [STUD](https://github.com/deeplearning-wisc/stud) if you are interested!
 
 ## Requirements
 A suitable [conda](https://conda.io/) environment named `dreamood` can be created
