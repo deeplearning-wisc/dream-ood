@@ -24,7 +24,7 @@ args = parser.parse_args()
 
 
 
-anchor = torch.from_numpy(np.load('./token_embed_cifar100.npy')).cuda()
+anchor = torch.from_numpy(np.load('./token_embed_c100.npy')).cuda()
 num_classes = 100
 sum_temp = 0
 data_dict = torch.from_numpy(np.load('./id_feat_cifar100_199epoch.npy')).cuda()
