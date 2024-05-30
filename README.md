@@ -9,7 +9,7 @@ The codebase is heavily based on [Stable Diffusion](https://github.com/CompVis/s
 
 Please find the link below for both the outlier and inlier images generated for ImageNet and Cifar100 datasets as [follows](https://uwprod-my.sharepoint.com/:f:/g/personal/xdu66_wisc_edu/EnL7GS4mQQxGlRcbWZgnwr0BfFKhPoLkkP463Xo94Hzfgw?e=ULi53j)
 
-(Sorry for the delay in announcing the generated images because I did not find a free drive with a large storage. The link will expire in 30 days and I will also update the GitHub page, thanks! If you have a suggested free online drive with large storage limits, please don't hesitate to forward it to me)
+(Sorry for the delay in announcing the generated images because I did not find a free drive with a large storage. The link will expire in 30 days due to limitations at my university, thanks! If you have a suggested free online drive with large storage limits, please don't hesitate to forward it to me)
 
 If you find the link expiring, please also email me!!
 
