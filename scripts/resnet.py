@@ -182,7 +182,7 @@ class ResNet_Model(nn.Module):
         model_fun, dim_in = model_dict[name]
         self.encoder = model_fun()
         self.fc = nn.Linear(dim_in, num_classes)
-        from route import RouteDICE
+        # from route import RouteDICE
         import numpy as np
         # self.fc = RouteDICE(512, num_classes, p=95,
         #                     info=np.load('/afs/cs.wisc.edu/u/x/f/xfdu/workspace/stable-diffusion/cache/imagenet_resnet34_feat_stat.npy'))
