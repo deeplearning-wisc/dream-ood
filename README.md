@@ -5,7 +5,7 @@ This is the source code accompanying the paper [***Dream the Impossible: Outlier
 
 The codebase is heavily based on [Stable Diffusion](https://github.com/CompVis/stable-diffusion).
 
-## TODO
+## Generated Images
 
 Please find the link below for both the outlier and inlier images generated for ImageNet and Cifar100 datasets as [follows](https://uwprod-my.sharepoint.com/:f:/g/personal/xdu66_wisc_edu/EnL7GS4mQQxGlRcbWZgnwr0BfFKhPoLkkP463Xo94Hzfgw?e=bhhuaD)
 
